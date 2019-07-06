@@ -39,3 +39,18 @@
 效果如图
 
 ![HSB_color](./png/HSB_circle.png)
+
+---
+
+
+
+## 形状
+
+首先，用shader画了一个橡塑版的正方形，不能不佩服作者的脑洞，这个例子也是关于运用 step() 函数、逻辑运算和转置坐标的结合。代码在[rectangle.frag](./rectangle.frag)中，效果如图
+
+![rectangle](./png/rectangle.png)
+
+
+
+
+
