@@ -50,6 +50,79 @@
 
 ![rectangle](./png/rectangle.png)
 
+---
+
+## 2D Matrices 二维矩阵
+
+文章以旋转的加号开始，加号的绘制没太看懂，[cross_shape.frag](./cross_shape.frag)中显示了全过程，效果如下图:
+
+![cross_shape](./png/cross_shape.png)
+
+接下就是旋转，坐标变量*mat2, 代码参考[cross_ratation.frag](./cross_ratation.frag),效果如下图：
+
+![cross_ratation](./png/cross_ratation.png)
+
+
+
+---
+
+## Patterns 图案
+
+
+
+平铺图案的例子：第一个例子比较初级，比如[patterns1.frag](./patterns1),如图所示：
+
+![patterns1](./png/patterns1.png)
+
+然后很神奇的加上了旋转，这得是厉害了，代码在[patterns_rotation](./patterns_rotation.frag)所示，效果如下图:
+
+![patterns_rotation](./png/patterns_rotation.png)
+
+另外，实现奇偶行左右偏移不同也是很好的实现
+
+```c
+_st.x += step(1., mod(_st.y,2.0)) * 0.5;
+
+// 原理效果等同：
+y = mod(x,2.0);
+y = mod(x,2.0) < 1.0 ? 0. : 1. ;
+y = step(1.0,mod(x,2.0));
+```
+
+进化移动版代码实现[patterns_marching_dots.frag](./patterns_marching_dots.frag)
+
+
+
+接下来是终极版的，像铺设瓷砖那样显示，代码如[patterns_truchet.frag](./patterns_truchet.frag),效果如图所示
+
+![patterns_truchet](./png/patterns_truchet.png)
+
+这节最后竟然实现了一个类似易经卦的图像，真真把我震惊到了，代码如
+
+[patterns_iching_01.frag](./patterns_iching_01.frag)效果如图：
+
+
+
+![patterns_iching_01](./png/patterns_iching_01.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
