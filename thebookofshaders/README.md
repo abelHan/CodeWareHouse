@@ -109,6 +109,24 @@ y = step(1.0,mod(x,2.0));
 
 
 
+## 随机
+
+先是巴拉巴拉一堆概念，没听明白，但代码还是很给力的
+
+在网格上显示雪花点了解一下，代码所示[random_floor.frag](./random_floor.frag)
+
+效果如图：
+
+![random_floor](./png/random_floor.png)
+
+
+
+接下来是升级版的迷宫版GLSL代码，没看太明白，代码如[random_maze.frag](./random_maze.frag)所示，效果如图
+
+![random_maze](./png/random_maze.png)
+
+接下来还有很多类似的东东，太复杂了，下次再去搞吧。
+
 
 
 
